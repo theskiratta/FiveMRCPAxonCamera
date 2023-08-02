@@ -6,7 +6,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
 	<link rel="stylesheet" href="https://use.typekit.net/fpa1hmo.css">
-	<link href="https://www.rcpisawesome.co.uk/dev/RCPMenu.css" rel="stylesheet">
+	<link href="nui/css/RCPMenu.css" rel="stylesheet">
 	<script>
 		Date.prototype.stdTimezoneOffset = function () {
 		    var jan = new Date(this.getFullYear(), 0, 1);
@@ -16,7 +16,7 @@
 		Date.prototype.isDstObserved = function () {
 		    return this.getTimezoneOffset() < this.stdTimezoneOffset();
 		}
-		var beep = new Howl({src: ["https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/beep.wav"]});
+		var beep = new Howl({src: ["/nui/sound/beep.wav"]});
 		beep.volume(0.01);
 		var togglevolume = true,togglebackground = true,togglethirdperson = true,togglepower = true,toggletimeoffest = true,toggle2minbeeps = true,twominbeep = true,toggleweapon = false,uienabled = false;
 		var offset = 0, setoffset = 0, utc = true, daylightsavings = "YES";
@@ -270,13 +270,13 @@
             background-size: 2vw 2vw;
             background-repeat: no-repeat;
 		}
-		#togglepower	  {top: 9vw; left: 72vw; background-image: url("https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/power.png");}
-		#toggletimeoffest {top: 9vw; left: 76vw; background-image: url("https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/offset.png");}
-		#togglevolume	  {top: 9vw; left: 80vw; background-image: url("https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/volume.png");}
-		#togglebackground {top: 9vw; left: 84vw; background-image: url("https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/background.png");}
-		#togglethirdperson{top: 9vw; left: 88vw; background-image: url("https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/thirdperson.png");}
-		#toggle2minbeeps  {top: 9vw; left: 92vw; background-image: url("https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/2minbeeps.png");}
-		#toggleweapon     {top: 9vw; left: 96vw; background-image: url("https://www.rcpisawesome.co.uk/dev/FiveMRCPAxonCamera/weapon.png");}
+		#togglepower	  {top: 9vw; left: 72vw; background-image: url("nui/images/power.png");}
+		#toggletimeoffest {top: 9vw; left: 76vw; background-image: url("nui/images/offset.png");}
+		#togglevolume	  {top: 9vw; left: 80vw; background-image: url("nui/images/volume.png");}
+		#togglebackground {top: 9vw; left: 84vw; background-image: url("nui/images/background.png");}
+		#togglethirdperson{top: 9vw; left: 88vw; background-image: url("nui/images/thirdperson.png");}
+		#toggle2minbeeps  {top: 9vw; left: 92vw; background-image: url("nui/images/2minbeeps.png");}
+		#toggleweapon     {top: 9vw; left: 96vw; background-image: url("nui/images/weapon.png");}
 
 		#volume{
 			display: none;
